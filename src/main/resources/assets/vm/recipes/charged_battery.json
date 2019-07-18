@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "rrr",
+        "rbr",
+        "rrr"
+    ],
+   
+    "key":
+    {
+        "r":
+        {
+            "item": "vm:molten_redstone"
+        },
+        "b":
+        {
+            "item": "vm:empty_battery"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:charged_battery",
+        "count": 1
+    }
+}

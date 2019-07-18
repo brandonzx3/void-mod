@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "bbb",
+        "btb",
+        "bbb"
+    ],
+   
+    "key":
+    {
+        "t":
+        {
+            "item": "minecraft:diamond_shovel"
+        },
+        "b":
+        {
+            "item": "vm:charged_battery"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:redstone_shovel",
+        "count": 1
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "wiw",
+        "iii",
+        "wiw"
+    ],
+   
+    "key":
+    {
+        "i":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+
+        "w":
+        {
+            "item": "vm:copper_wire"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:redstone_energy_container",
+        "count": 1
+    }
+}

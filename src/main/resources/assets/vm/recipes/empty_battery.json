@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " i ",
+        "iri",
+        "iii"
+    ],
+   
+    "key":
+    {
+        "i":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+
+        "r":
+        {
+            "item": "vm:redstone_energy_container"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:empty_battery",
+        "count": 1
+    }
+}

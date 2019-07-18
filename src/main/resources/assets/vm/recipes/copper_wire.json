@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "   ",
+        "ccc",
+        "   "
+    ],
+   
+    "key":
+    {
+        "c":
+        {
+            "item": "vm:copper_Ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:copper_wire",
+        "count": 6
+    }
+}

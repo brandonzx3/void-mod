@@ -1,0 +1,43 @@
+//items
+item.ruby.name=Ruby
+item.obsidian_ingot.name=Obsidian Ingot
+item.tungsten_ingot.name=Tungsten Ingot
+item.empty_battery.name=Empty Battery
+item.charged_battery.name=Charged Battery
+item.molten_redstone.name=Molten Redstone
+item.copper_ingot.name=Copper Ingot
+item.copper_wire.name=Copper Wire
+item.redstone_energy_container.name=Redstone Energy Container
+
+//blocks
+tile.ruby_block.name=Block of Ruby
+tile.ruby_ore.name=Ruby Ore
+
+tile.tungsten_ore.name=Tungsten Ore
+
+tile.copper_ore.name=Copper Ore
+
+//tabs
+itemGroup.voidmodtab=Void Mod
+
+//tools
+item.obsidian_sword.name=Obsidian Sword
+item.obsidian_shovel.name=Obsidian Shovel
+item.obsidian_pickaxe.name=Obsidian Pickaxe
+item.obsidian_axe.name=Obsidian Axe
+
+item.ruby_sword.name=Ruby Sword
+item.ruby_shovel.name=Ruby Shovel
+item.ruby_pickaxe.name=Ruby Pickaxe
+item.ruby_axe.name=Ruby Axe
+
+item.redstone_sword=Power Sword
+item.redstone_pickaxe.name=Power Pickaxe
+item.redstone_shovel.name=Power Shovel
+item.redstone_axe.name=Power Axe
+
+//armor
+item.obsidian_helmate.name=Obsidian Helmate
+item.obsidian_chestplate.name=Obsidian Chestplate
+item.obsidian_leggings.name=Obsidian Leggings
+item.obsidian_boots.name=Obsidian Boots

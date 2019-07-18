@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "ooo",
+        "o o",
+        "o o"
+    ],
+   
+    "key":
+    {
+        "o":
+        {
+            "item": "vm:obsidian_ingot"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:obsidian_leggings",
+        "count": 1
+    }
+}

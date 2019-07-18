@@ -1,0 +1,16 @@
+[
+{
+  "modid": "vm",
+  "name": "Void Mod",
+  "description": "test mod.",
+  "version": "1.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["brandonzx3"],
+  "credits": "the blazetek team",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
