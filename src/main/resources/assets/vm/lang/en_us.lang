@@ -8,6 +8,11 @@ item.molten_redstone.name=Molten Redstone
 item.copper_ingot.name=Copper Ingot
 item.copper_wire.name=Copper Wire
 item.redstone_energy_container.name=Redstone Energy Container
+item.hammer.name=Hammer
+item.iron_plate.name=Iron Plate
+item.gold_plate.name= Gold PLate
+item.diamond_plate.name=Diamond Plate
+item.obsidian_plate.name=Obsidian Plate
 
 //blocks
 tile.ruby_block.name=Block of Ruby
@@ -35,6 +40,11 @@ item.redstone_sword=Power Sword
 item.redstone_pickaxe.name=Power Pickaxe
 item.redstone_shovel.name=Power Shovel
 item.redstone_axe.name=Power Axe
+
+item.tungsten_sword.name=Tungsten Sword
+item.tungsten_pickaxe.name=Tungsten Pickaxe
+item.tungsten_shovel.name=Tungsten Shovel
+item.tungsten_axe.name=Tungsten Axe
 
 //armor
 item.obsidian_helmate.name=Obsidian Helmate
