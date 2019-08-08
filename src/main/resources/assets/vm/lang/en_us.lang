@@ -13,6 +13,9 @@ item.iron_plate.name=Iron Plate
 item.gold_plate.name= Gold Plate
 item.diamond_plate.name=Diamond Plate
 item.obsidian_plate.name=Obsidian Plate
+item.azurire.name=Azurite
+item.pytite.name=Pyrite
+item.barite_Ingot.name=Barite Ingot
 
 //blocks
 tile.ruby_block.name=Block of Ruby

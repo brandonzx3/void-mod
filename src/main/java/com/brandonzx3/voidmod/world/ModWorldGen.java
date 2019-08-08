@@ -23,7 +23,10 @@ public class ModWorldGen implements IWorldGenerator{
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider){
         generateOre(ModBlocks.RUBY_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 20, random.nextInt(7) + 4, 5);
         generateOre(ModBlocks.TUNGSTEN_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 50, random.nextInt(7) + 4, 10);
-        generateOre(ModBlocks.COPPER_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 64, random.nextInt(9) + 4, 15);
+        generateOre(ModBlocks.COPPER_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 64, random.nextInt(8) + 3, 15);
+        generateOre(ModBlocks.BARITE_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 25, random.nextInt(5) + 1, 10);
+        generateOre(ModBlocks.PYRITE_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 4, 30, random.nextInt(9) + 4, 6);
+        generateOre(ModBlocks.AZURITE_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 10, random.nextInt(10) + 1, 4);
     }
 
     private void generateOre(IBlockState ore, World world, Random random, int x, int z, int minY, int maxY, int size, int chances){
