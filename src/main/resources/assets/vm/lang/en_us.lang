@@ -10,7 +10,7 @@ item.copper_wire.name=Copper Wire
 item.redstone_energy_container.name=Redstone Energy Container
 item.hammer.name=Hammer
 item.iron_plate.name=Iron Plate
-item.gold_plate.name= Gold PLate
+item.gold_plate.name= Gold Plate
 item.diamond_plate.name=Diamond Plate
 item.obsidian_plate.name=Obsidian Plate
 
@@ -19,8 +19,10 @@ tile.ruby_block.name=Block of Ruby
 tile.ruby_ore.name=Ruby Ore
 
 tile.tungsten_ore.name=Tungsten Ore
+tile.tungsten_block.name=Tungsten Block
 
 tile.copper_ore.name=Copper Ore
+tile.copper_block.name=Copper Block
 
 //tabs
 itemGroup.voidmodtab=Void Mod
