@@ -28,6 +28,7 @@ public class ModItems{
     //materials
     public static final ToolMaterial MATERIAL_OBSIDIAN = EnumHelper.addToolMaterial("material_obsidian", 4, 2000, 8.0F, 4.0F, 10);
     public static final ArmorMaterial ARMOR_MATERIAL_OBSIDIAN = EnumHelper.addArmorMaterial("armor_materail_obsidian", Referance.MODID + ":obsidian", 16, new int[] {4, 7, 10, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+    public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_materail_ruby", Referance.MODID + ":ruby", 16, new int[] {4, 7, 10, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
     public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 5, 2500, 9, 5, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
@@ -51,7 +52,6 @@ public class ModItems{
     public static final Item BARITE_INGOT = new ItemBase("barite_ingot");
     public static final Item PYRITE = new ItemBase("pyrite");
     public static final Item AZURITE = new ItemBase("azurite");
-    public static final Item FAKE_GOLD_DUST = new ItemBase("fake_gold_dust");
 
     //tools
     public static final ItemSword OBSIDIAN_SWORD = new ToolSword("obsidian_sword", MATERIAL_OBSIDIAN);
@@ -82,5 +82,5 @@ public class ModItems{
     public static final Item OBSIDIAN_BOOTS = new ArmorBase("obsidian_boots", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
 
     //foods
-    
+    public static final Item FAKE_GOLD_DUST = new FoodBase("fake_gold_dust", 4, 2.4F, false);
 }
