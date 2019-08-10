@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "vm:barite_ore" }
+    }
+}
