@@ -3,9 +3,12 @@ package com.brandonzx3.voidmod.init;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.brandonzx3.voidmod.blocks.AzuriteOre;
+import com.brandonzx3.voidmod.blocks.BariteOre;
 import com.brandonzx3.voidmod.blocks.BlockBase;
 import com.brandonzx3.voidmod.blocks.CopperBlock;
 import com.brandonzx3.voidmod.blocks.CopperOre;
+import com.brandonzx3.voidmod.blocks.PyriteOre;
 import com.brandonzx3.voidmod.blocks.RubyBlock;
 import com.brandonzx3.voidmod.blocks.RubyOre;
 import com.brandonzx3.voidmod.blocks.TungstenBlock;
@@ -23,7 +26,7 @@ public class ModBlocks{
     public static final Block COPPER_ORE = new CopperOre("copper_ore", Material.ROCK);
     public static final Block TUNGSTEN_BLOCK = new TungstenBlock("tungsten_block", Material.IRON);
     public static final Block COPPER_BLOCK = new CopperBlock("copper_block", Material.IRON);
-    public static final Block BARITE_ORE = new BlockBase("barite_ore", Material.ROCK);
-    public static final Block PYRITE_ORE = new BlockBase("pyrite_ore", Material.ROCK);
-    public static final Block AZURITE_ORE = new BlockBase("azurite_ore", Material.ROCK);
+    public static final Block BARITE_ORE = new BariteOre("barite_ore", Material.ROCK);
+    public static final Block PYRITE_ORE = new PyriteOre("pyrite_ore", Material.ROCK);
+    public static final Block AZURITE_ORE = new AzuriteOre("azurite_ore", Material.ROCK);
 }
