@@ -10,17 +10,29 @@ item.copper_wire.name=Copper Wire
 item.redstone_energy_container.name=Redstone Energy Container
 item.hammer.name=Hammer
 item.iron_plate.name=Iron Plate
-item.gold_plate.name= Gold PLate
+item.gold_plate.name= Gold Plate
 item.diamond_plate.name=Diamond Plate
 item.obsidian_plate.name=Obsidian Plate
+item.azurite.name=Azurite
+item.pyrite.name=Pyrite
+item.barite_ingot.name=Barite Ingot
+item.fake_gold_dust.name=Fake Gold Dust
 
 //blocks
 tile.ruby_block.name=Block of Ruby
 tile.ruby_ore.name=Ruby Ore
 
 tile.tungsten_ore.name=Tungsten Ore
+tile.tungsten_block.name=Tungsten Block
 
 tile.copper_ore.name=Copper Ore
+tile.copper_block.name=Copper Block
+
+tile.barite_ore.name=Barite Ore
+
+tile.pyrite_ore.name=Pyrite Ore
+
+tile.azurite_ore.name=Azurite Ore
 
 //tabs
 itemGroup.voidmodtab=Void Mod
@@ -36,7 +48,7 @@ item.ruby_shovel.name=Ruby Shovel
 item.ruby_pickaxe.name=Ruby Pickaxe
 item.ruby_axe.name=Ruby Axe
 
-item.redstone_sword=Power Sword
+item.redstone_sword.name=Power Sword
 item.redstone_pickaxe.name=Power Pickaxe
 item.redstone_shovel.name=Power Shovel
 item.redstone_axe.name=Power Axe

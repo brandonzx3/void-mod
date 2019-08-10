@@ -48,6 +48,10 @@ public class ModItems{
     public static final Item GOLD_PLATE = new ItemBase("gold_plate");
     public static final Item DIAMOND_PLATE = new ItemBase("diamond_plate");
     public static final Item OBSIDIAN_PLATE = new ItemBase("obsidian_plate");
+    public static final Item BARITE_INGOT = new ItemBase("barite_ingot");
+    public static final Item PYRITE = new ItemBase("pyrite");
+    public static final Item AZURITE = new ItemBase("azurite");
+    public static final Item FAKE_GOLD_DUST = new ItemBase("fake_gold_dust");
 
     //tools
     public static final ItemSword OBSIDIAN_SWORD = new ToolSword("obsidian_sword", MATERIAL_OBSIDIAN);
