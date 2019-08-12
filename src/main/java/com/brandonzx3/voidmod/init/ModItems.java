@@ -5,12 +5,15 @@ import java.util.ArrayList;
 
 import com.brandonzx3.voidmod.items.ItemBase;
 import com.brandonzx3.voidmod.items.armor.ArmorBase;
+import com.brandonzx3.voidmod.items.food.FoodBase;
+import com.brandonzx3.voidmod.items.food.FoodEffectBase;
 import com.brandonzx3.voidmod.items.tools.ToolAxe;
 import com.brandonzx3.voidmod.items.tools.ToolPickaxe;
 import com.brandonzx3.voidmod.items.tools.ToolSpade;
 import com.brandonzx3.voidmod.items.tools.ToolSword;
 import com.brandonzx3.voidmod.util.Referance;
 
+import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -20,6 +23,7 @@ import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ModItems{
@@ -28,7 +32,7 @@ public class ModItems{
     //materials
     public static final ToolMaterial MATERIAL_OBSIDIAN = EnumHelper.addToolMaterial("material_obsidian", 4, 2000, 8.0F, 4.0F, 10);
     public static final ArmorMaterial ARMOR_MATERIAL_OBSIDIAN = EnumHelper.addArmorMaterial("armor_materail_obsidian", Referance.MODID + ":obsidian", 16, new int[] {4, 7, 10, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
-    public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_materail_ruby", Referance.MODID + ":ruby", 16, new int[] {4, 7, 10, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+    public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_materail_ruby", Referance.MODID + ":ruby", 16, new int[] {6, 9, 12, 6}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
     public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 5, 2500, 9, 5, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
@@ -81,6 +85,11 @@ public class ModItems{
     public static final Item OBSIDIAN_LEGGINGS = new ArmorBase("obsidian_leggings", ARMOR_MATERIAL_OBSIDIAN, 2, EntityEquipmentSlot.LEGS);
     public static final Item OBSIDIAN_BOOTS = new ArmorBase("obsidian_boots", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.FEET);
 
+    public static final Item RUBY_HELMATE = new ArmorBase("ruby_helmate", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.HEAD);
+    public static final Item RUBY_CHESTPLATE = new ArmorBase("ruby_chestplate", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.CHEST);
+    public static final Item RUBY_LEGGINGS = new ArmorBase("ruby_leggings", ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS);
+    public static final Item RUBY_BOOTS = new ArmorBase("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
+
     //foods
-    public static final Item FAKE_GOLD_DUST = new FoodBase("fake_gold_dust", 4, 2.4F, false);
+    public static final Item FAKE_GOLD_DUST = new FoodEffectBase("fake_gold_dust", 4, 2.4F, false, new PotionEffect[] {new PotionEffect(MobEffects.POISON, 10 * 20, 4, false, true), new PotionEffect(MobEffects.NAUSEA, 10 * 20, 5, false, true)});
 }

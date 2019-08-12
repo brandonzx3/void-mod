@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "o o",
+        "ooo",
+        "ooo"
+    ],
+   
+    "key":
+    {
+        "o":
+        {
+            "item": "vm:ruby"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:ruby_chestplate",
+        "count": 1
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "ooo",
+        "o o",
+        "   "
+    ],
+   
+    "key":
+    {
+        "o":
+        {
+            "item": "vm:ruby"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:ruby_helmate",
+        "count": 1
+    }
+}
