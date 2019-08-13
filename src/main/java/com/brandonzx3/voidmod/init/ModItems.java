@@ -92,4 +92,5 @@ public class ModItems{
 
     //foods
     public static final Item FAKE_GOLD_DUST = new FoodEffectBase("fake_gold_dust", 4, 2.4F, false, new PotionEffect[] {new PotionEffect(MobEffects.POISON, 10 * 20, 4, false, true), new PotionEffect(MobEffects.NAUSEA, 10 * 20, 5, false, true)});
+    public static final Item GLASS_SHARD = new FoodEffectBase("glass_shard", 0, 0, false, new PotionEffect[] {new PotionEffect(MobEffects.WITHER, 60 * 20, 6, false, true), new PotionEffect(MobEffects.NAUSEA, 60 * 20, 6, false, true)});
 }

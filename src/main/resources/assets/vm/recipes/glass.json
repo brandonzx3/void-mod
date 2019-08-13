@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "ggg",
+        "ggg",
+        "ggg"
+    ],
+   
+    "key":
+    {
+        "g":
+        {
+            "item": "vm:glass_shard"
+        },
+    },
+   
+    "result":
+    {
+        "item": "minecraft:glass",
+        "count": 1
+    }
+}

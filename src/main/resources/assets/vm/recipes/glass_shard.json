@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:glass"
+        },
+        
+        {
+            "item": "vm:hammer"
+        }
+    ],
+    "result": {
+        "item": "vm:glass_shard",
+        "count": 4
+    }
+}
