@@ -17,6 +17,7 @@ item.azurite.name=Azurite
 item.pyrite.name=Pyrite
 item.barite_ingot.name=Barite Ingot
 item.fake_gold_dust.name=Fake Gold Dust
+item.glass_shard.name=Glass Shard
 
 //blocks
 tile.ruby_block.name=Block of Ruby
