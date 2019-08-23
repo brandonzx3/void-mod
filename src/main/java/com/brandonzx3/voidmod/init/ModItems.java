@@ -33,7 +33,9 @@ public class ModItems{
     public static final ToolMaterial MATERIAL_OBSIDIAN = EnumHelper.addToolMaterial("material_obsidian", 4, 2000, 8.0F, 4.0F, 10);
     public static final ArmorMaterial ARMOR_MATERIAL_OBSIDIAN = EnumHelper.addArmorMaterial("armor_materail_obsidian", Referance.MODID + ":obsidian", 16, new int[] {4, 7, 10, 4}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
     public static final ArmorMaterial ARMOR_MATERIAL_RUBY = EnumHelper.addArmorMaterial("armor_materail_ruby", Referance.MODID + ":ruby", 16, new int[] {6, 9, 12, 6}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+    public static final ArmorMaterial ARMOR_MATERIAL_AZURITE = EnumHelper.addArmorMaterial("armor_material_azurite", Referance.MODID + ":azurite", 16, new int[] {8, 11, 14, 8}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
     public static final ToolMaterial MATERIAL_RUBY = EnumHelper.addToolMaterial("material_ruby", 5, 2500, 9, 5, 10);
+    public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 6, 4000, 9, 6, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
 
@@ -78,6 +80,11 @@ public class ModItems{
     public static final ItemSpade TUNGSTEN_SHOVEL = new ToolSpade("tungsten_shovel", MATERIAL_TUNGSTEN);
     public static final ItemPickaxe TUNGSTEN_PICKAXE = new ToolPickaxe("tungsten_pickaxe", MATERIAL_TUNGSTEN);
     public static final ItemAxe TUNGSTEN_AXE = new ToolAxe("tungsten_axe", MATERIAL_TUNGSTEN, 5.0F, -3.1F);
+
+    public static final ItemSword AZURITE_SWORD = new ToolSword("azurite_sword", MATERIAL_AZURITE);
+    public static final ItemSpade  AZURITE_SHOVEL = new ToolSpade("azurite_shovel", MATERIAL_AZURITE);
+    public static final ItemPickaxe AZURITE_PICKAXE = new ToolPickaxe("azurite_pickaxe", MATERIAL_AZURITE);
+    public static final ToolAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE);
 
     //armor
     public static final Item OBSIDIAN_HELMATE = new ArmorBase("obsidian_helmate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
