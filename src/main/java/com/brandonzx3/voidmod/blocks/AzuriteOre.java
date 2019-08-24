@@ -23,4 +23,11 @@ public class AzuriteOre extends BlockBase {
     public Item getItemDropped(IBlockState state, Random rand, int fortune){
         return ModItems.AZURITE;
     }
+
+    @Override
+    public int quantityDropped(Random rand) {
+        int max = 4;
+        int min = 1;
+        return rand.nextInt(max) + min;
+    }
 }

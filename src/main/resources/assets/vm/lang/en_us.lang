@@ -18,6 +18,7 @@ item.pyrite.name=Pyrite
 item.barite_ingot.name=Barite Ingot
 item.fake_gold_dust.name=Fake Gold Dust
 item.glass_shard.name=Glass Shard
+item.pure_azurite.name=Pure Azurite
 
 //blocks
 tile.ruby_block.name=Block of Ruby
@@ -59,6 +60,11 @@ item.tungsten_pickaxe.name=Tungsten Pickaxe
 item.tungsten_shovel.name=Tungsten Shovel
 item.tungsten_axe.name=Tungsten Axe
 
+item.azurite_sword.name=Azurite Sword
+item.azurite_pickaxe.name=Azurite Pickaxe
+item.azurite_shovel.name=Azurite Shovel
+item.azurite_axe.name=Azurite Axe
+
 //armor
 item.obsidian_helmate.name=Obsidian Helmate
 item.obsidian_chestplate.name=Obsidian Chestplate
@@ -69,3 +75,8 @@ item.ruby_helmate.name=Ruby Helmate
 item.ruby_chestplate.name=Ruby Chestplate
 item.ruby_leggings.name=Ruby Leggings
 item.ruby_boots.name=Ruby Boots
+
+item.azurite_helmate.naem=Azurite Helmate
+item.azurite_chestplate.name=Azurite Chestplate
+item.azurite_leggings.name=Azurite Leggings
+item.azurite_boots.name=Azurite Boots

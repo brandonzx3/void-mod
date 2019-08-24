@@ -58,6 +58,7 @@ public class ModItems{
     public static final Item BARITE_INGOT = new ItemBase("barite_ingot");
     public static final Item PYRITE = new ItemBase("pyrite");
     public static final Item AZURITE = new ItemBase("azurite");
+    public static final Item PURE_AZURITE = new ItemBase("pure_azurite");
 
     //tools
     public static final ItemSword OBSIDIAN_SWORD = new ToolSword("obsidian_sword", MATERIAL_OBSIDIAN);
@@ -84,7 +85,7 @@ public class ModItems{
     public static final ItemSword AZURITE_SWORD = new ToolSword("azurite_sword", MATERIAL_AZURITE);
     public static final ItemSpade  AZURITE_SHOVEL = new ToolSpade("azurite_shovel", MATERIAL_AZURITE);
     public static final ItemPickaxe AZURITE_PICKAXE = new ToolPickaxe("azurite_pickaxe", MATERIAL_AZURITE);
-    public static final ToolAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE);
+    public static final ToolAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE, 5.0F, -3.1F);
 
     //armor
     public static final Item OBSIDIAN_HELMATE = new ArmorBase("obsidian_helmate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
@@ -96,6 +97,11 @@ public class ModItems{
     public static final Item RUBY_CHESTPLATE = new ArmorBase("ruby_chestplate", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.CHEST);
     public static final Item RUBY_LEGGINGS = new ArmorBase("ruby_leggings", ARMOR_MATERIAL_RUBY, 2, EntityEquipmentSlot.LEGS);
     public static final Item RUBY_BOOTS = new ArmorBase("ruby_boots", ARMOR_MATERIAL_RUBY, 1, EntityEquipmentSlot.FEET);
+
+    public static final Item AZURITE_HELMATE = new ArmorBase("azurite_helmate", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.HEAD);
+    public static final Item AZURITE_CHESTPLATE = new ArmorBase("azurite_chestplate", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.CHEST);
+    public static final Item AZURITE_LEGGINGS = new ArmorBase("azurite_leggings", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.LEGS);
+    public static final Item AZURITE_BOOTS = new ArmorBase("azurite_boots", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.FEET);
 
     //foods
     public static final Item FAKE_GOLD_DUST = new FoodEffectBase("fake_gold_dust", 4, 2.4F, false, new PotionEffect[] {new PotionEffect(MobEffects.POISON, 10 * 20, 4, false, true), new PotionEffect(MobEffects.NAUSEA, 10 * 20, 5, false, true)});
