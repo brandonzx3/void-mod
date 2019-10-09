@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        " a ",
+        " a ",
+        " s "
+    ],
+   
+    "key":
+    {
+        "a":
+        {
+            "item": "vm:azurite"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:azurite_sword"
+    }
+}

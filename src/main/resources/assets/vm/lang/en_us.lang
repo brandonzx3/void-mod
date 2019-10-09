@@ -66,6 +66,11 @@ item.azurite_pickaxe.name=Azurite Pickaxe
 item.azurite_shovel.name=Azurite Shovel
 item.azurite_axe.name=Azurite Axe
 
+item.redstone_azurite_sword.name=Empowered Azurite Sword
+item.redstone_azurite_pickaxe.name=Empowered Azurite Pickaxe
+item.redstone_azurite_axe.name=Empowered Azurite Axe
+item.redstone_azurite_shovel.name=Empowered Azurite Shovel
+
 //armor
 item.obsidian_helmate.name=Obsidian Helmate
 item.obsidian_chestplate.name=Obsidian Chestplate
@@ -81,3 +86,8 @@ item.azurite_helmate.name=Azurite Helmate
 item.azurite_chestplate.name=Azurite Chestplate
 item.azurite_leggings.name=Azurite Leggings
 item.azurite_boots.name=Azurite Boots
+
+item.redstone.azurite_helmate.name=Empowered Azurite Helmate
+item.redstone.azurite_chestplate.name=Empowered Azurite Chestplate
+item.redston.eazurite_leggings.name=Empowered Azurite Leggings
+item.redstone.azurite_boots.name=Empowered Azurite Boots

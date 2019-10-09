@@ -82,7 +82,7 @@ public class ModelVoidElf extends ModelBase {
 		this.leg_right.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float) Math.PI) * 1.4F * limbSwingAmount;
 		
 		this.head.rotateAngleY = netHeadYaw * 0.017453292F;
-		this.head.rotateAngleY = headPitch * 0.017453292F;
+		this.head.rotateAngleX = headPitch * 0.017453292F;
     }
 	
 }

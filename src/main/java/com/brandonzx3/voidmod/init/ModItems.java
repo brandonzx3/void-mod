@@ -3,7 +3,7 @@ package com.brandonzx3.voidmod.init;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.brandonzx3.items.crafting.ItemHammer;
+import com.brandonzx3.voidmod.items.crafting.ItemHammer;
 import com.brandonzx3.voidmod.items.ItemBase;
 import com.brandonzx3.voidmod.items.armor.ArmorBase;
 import com.brandonzx3.voidmod.items.food.FoodBase;
@@ -39,6 +39,8 @@ public class ModItems{
     public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 6, 4000, 9, 6, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
+    public static final ToolMaterial MATERIAL_REDSTONE_AZURITE = EnumHealper.addToolMaterial("redstone_azurite", 5000, 17, 10, 7, 10);
+    public static final ArmorMaterial ARMOR_MATERIAL_REDSTONE_AZURITE = EnumHelper.addArmorMaterial("armor_material_redstone_azurite", Referance.MODID + ":redstone_azurite", 16, new int[] {10, 13, 16, 10}, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 
 
     //items
@@ -88,6 +90,11 @@ public class ModItems{
     public static final ItemSpade  AZURITE_SHOVEL = new ToolSpade("azurite_shovel", MATERIAL_AZURITE);
     public static final ItemPickaxe AZURITE_PICKAXE = new ToolPickaxe("azurite_pickaxe", MATERIAL_AZURITE);
     public static final ToolAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE, 5.0F, -3.1F);
+    
+    public static final ItemSword REDSTONE_AZURITE_SWORD = new ToolSword("redstone_azurite_sword", MATERIAL_AZURITE);
+    public static final ItemSpade  REDSTONE_AZURITE_SHOVEL = new ToolSpade("redstone_azurite_shovel", MATERIAL_AZURITE);
+    public static final ItemPickaxe REDSTONE_AZURITE_PICKAXE = new ToolPickaxe("redstone_azurite_pickaxe", MATERIAL_AZURITE);
+    public static final ToolAxe REDSTONE_AZURITE_AXE = new ToolAxe("redstone_azurite_axe", MATERIAL_AZURITE, 5.0F, -3.1F);
 
     //armor
     public static final Item OBSIDIAN_HELMATE = new ArmorBase("obsidian_helmate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);
@@ -102,9 +109,14 @@ public class ModItems{
 
     public static final Item AZURITE_HELMATE = new ArmorBase("azurite_helmate", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.HEAD);
     public static final Item AZURITE_CHESTPLATE = new ArmorBase("azurite_chestplate", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.CHEST);
-    public static final Item AZURITE_LEGGINGS = new ArmorBase("azurite_leggings", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.LEGS);
+    public static final Item AZURITE_LEGGINGS = new ArmorBase("azurite_leggings", ARMOR_MATERIAL_AZURITE, 2, EntityEquipmentSlot.LEGS);
     public static final Item AZURITE_BOOTS = new ArmorBase("azurite_boots", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.FEET);
-
+    
+    public static final Item REDSTONE_AZURITE_HEMLATE = new ArmorBase("redstone_azurite_helmate", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.HEAD);
+    public static final Item REDSTONE_AZURITE_CHESTPLATE = new ArmorBase("redstone_azurite_chestplate", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.SHEST);
+    public static final Item REDSTONE_AZURITE_LEGGINGS = new ArmorBase("redstone_azurite_leggings", ARMOR_MATERIAL_REDSTONE_AZURITE, 2, EntityEquipmentSlot.LEGS);
+    public static final Item REDSTONE_AZURITE_BOOTS = new ArmorBase("redstone_azurite_boots", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.FEET);
+    
     //foods
     public static final Item FAKE_GOLD_DUST = new FoodEffectBase("fake_gold_dust", 4, 2.4F, false, new PotionEffect[] {new PotionEffect(MobEffects.POISON, 10 * 20, 4, false, true), new PotionEffect(MobEffects.NAUSEA, 10 * 20, 5, false, true)});
     public static final Item GLASS_SHARD = new FoodEffectBase("glass_shard", 0, 0, false, new PotionEffect[] {new PotionEffect(MobEffects.WITHER, 60 * 20, 6, false, true), new PotionEffect(MobEffects.NAUSEA, 60 * 20, 6, false, true)});

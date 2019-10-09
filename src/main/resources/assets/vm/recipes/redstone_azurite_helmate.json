@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "bbb",
+        "bab",
+        "bbb"
+    ],
+   
+    "key":
+    {
+        "a":
+        {
+            "item": "vm:azurite_helmate"
+        },
+        "b":
+        {
+            "item": "vm:azurite_battery"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:redstone_azurite_helmate"
+    }
+}

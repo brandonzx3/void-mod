@@ -12,7 +12,7 @@
     {
         "a":
         {
-            "item": "vm:azurite"
+            "item": "vm:pure_azurite"
         },
         "b":
         {
