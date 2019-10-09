@@ -1,15 +1,16 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:diamond"
-        },
-        
-        {
-            "item": "vm:hammer"
-        }
-    ],
-    "result": {
-        "item": "vm:diamond_plate"
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "vm:hammer",
+      "data": 32767
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "gemDiamond"
     }
+  ],
+  "result": {
+    "item": "vm:diamond_plate"
+  }
 }

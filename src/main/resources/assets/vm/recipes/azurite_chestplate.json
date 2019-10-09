@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "a a",
+        "aaa",
+        "aaa"
+    ],
+   
+    "key":
+    {
+        "a":
+        {
+            "item": "vm:pure_azurite"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:azurite_chestplate",
+        "count": 1
+    }
+}

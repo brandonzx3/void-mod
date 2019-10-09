@@ -3,21 +3,22 @@
    
     "pattern":
     [
-        "RRR",
-        "RRR",
-        "RRR"
+        "aaa",
+        "aaa",
+        "aaa"
     ],
    
     "key":
     {
-        "R":
+        "a":
         {
-            "item": "vm:copper_ingot"
+            "item": "vm:azurite"
         }
     },
    
     "result":
     {
-        "item": "vm:copper_block"
+        "item": "vm:pure_azurite",
+        "count": 1
     }
 }

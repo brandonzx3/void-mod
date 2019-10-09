@@ -1,7 +1,7 @@
 package com.brandonzx3.voidmod.util.handlers;
 
-import com.brandonzx3.voidmod.init.BiomeInit;
 import com.brandonzx3.voidmod.init.ModBlocks;
+import com.brandonzx3.voidmod.init.ModEntitys;
 import com.brandonzx3.voidmod.init.ModItems;
 import com.brandonzx3.voidmod.util.IHasModel;
 
@@ -38,8 +38,9 @@ public class RegistryHandler {
             }
         }
     }
-
-    public static void otherRegistries(){
-        BiomeInit.registerBiome();
-    }
+    
+    public static void PreInitRegistries() {
+		ModEntitys.registerEntitys();
+		RenderHandler.registerEntityRenders();
+	}
 }

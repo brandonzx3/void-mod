@@ -3,6 +3,7 @@ package com.brandonzx3.voidmod.init;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.brandonzx3.items.crafting.ItemHammer;
 import com.brandonzx3.voidmod.items.ItemBase;
 import com.brandonzx3.voidmod.items.armor.ArmorBase;
 import com.brandonzx3.voidmod.items.food.FoodBase;
@@ -50,7 +51,7 @@ public class ModItems{
     public static final Item COPPER_INGOT = new ItemBase("copper_ingot");
     public static final Item COPPER_WIRE = new ItemBase("copper_wire");
     public static final Item REDSTONE_ENERGY_CONTIANER = new ItemBase("redstone_energy_container");
-    public static final Item HAMMER = new ItemBase("hammer");
+    public static final Item HAMMER = new ItemHammer("hammer");
     public static final Item IRON_PlATE = new ItemBase("iron_plate");
     public static final Item GOLD_PLATE = new ItemBase("gold_plate");
     public static final Item DIAMOND_PLATE = new ItemBase("diamond_plate");
@@ -59,6 +60,7 @@ public class ModItems{
     public static final Item PYRITE = new ItemBase("pyrite");
     public static final Item AZURITE = new ItemBase("azurite");
     public static final Item PURE_AZURITE = new ItemBase("pure_azurite");
+    public static final Item AZURITE_BATTERY = new ItemBase("azurite_battery");
 
     //tools
     public static final ItemSword OBSIDIAN_SWORD = new ToolSword("obsidian_sword", MATERIAL_OBSIDIAN);

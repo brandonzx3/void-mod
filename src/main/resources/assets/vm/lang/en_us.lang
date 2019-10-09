@@ -19,6 +19,7 @@ item.barite_ingot.name=Barite Ingot
 item.fake_gold_dust.name=Fake Gold Dust
 item.glass_shard.name=Glass Shard
 item.pure_azurite.name=Pure Azurite
+item.azurite_battery.name=Azurite Battery
 
 //blocks
 tile.ruby_block.name=Block of Ruby
@@ -76,7 +77,7 @@ item.ruby_chestplate.name=Ruby Chestplate
 item.ruby_leggings.name=Ruby Leggings
 item.ruby_boots.name=Ruby Boots
 
-item.azurite_helmate.naem=Azurite Helmate
+item.azurite_helmate.name=Azurite Helmate
 item.azurite_chestplate.name=Azurite Chestplate
 item.azurite_leggings.name=Azurite Leggings
 item.azurite_boots.name=Azurite Boots

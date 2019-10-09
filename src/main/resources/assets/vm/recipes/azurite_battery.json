@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "aaa",
+        "aba",
+        "aaa"
+    ],
+   
+    "key":
+    {
+        "a":
+        {
+            "item": "vm:azurite"
+        },
+        "b":
+        {
+            "item": "vm:charged_battery"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:azurite_battery",
+        "count": 1
+    }
+}

@@ -1,12 +1,17 @@
 package com.brandonzx3.voidmod;
 
+import com.brandonzx3.voidmod.init.ModBlocks;
+import com.brandonzx3.voidmod.init.ModItems;
 import com.brandonzx3.voidmod.init.ModRecipes;
 import com.brandonzx3.voidmod.proxy.CommonProxy;
 import com.brandonzx3.voidmod.tabs.VoidModTab;
 import com.brandonzx3.voidmod.util.Referance;
+import com.brandonzx3.voidmod.util.handlers.RegistryHandler;
+import com.brandonzx3.voidmod.util.handlers.RenderHandler;
 import com.brandonzx3.voidmod.world.ModWorldGen;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -15,6 +20,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Referance.MODID, name = Referance.NAME, version = Referance.VERSION)
 public class Main{
@@ -29,7 +35,19 @@ public class Main{
 
     @EventHandler
     public static void PreInit(FMLPreInitializationEvent event){
+    	RegistryHandler.PreInitRegistries();
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        OreDictionary.registerOre("gemRuby", new ItemStack(ModItems.RUBY));
+        OreDictionary.registerOre("ingotCopper", new ItemStack(ModItems.COPPER_INGOT));
+        OreDictionary.registerOre("ingotObsidian", new ItemStack(ModItems.OBSIDIAN_INGOT));
+        
+        OreDictionary.registerOre("wireCopper", new ItemStack(ModItems.COPPER_WIRE));
+        
+        OreDictionary.registerOre("oreRuby", new ItemStack(ModBlocks.RUBY_ORE));
+        OreDictionary.registerOre("oreCopper", new ItemStack(ModBlocks.COPPER_ORE));
+        
+        OreDictionary.registerOre("blockRuby", new ItemStack(ModBlocks.RUBY_BLOCK));
+        OreDictionary.registerOre("blockCopper", new ItemStack(ModBlocks.COPPER_BLOCK));
     }
 
     @EventHandler
