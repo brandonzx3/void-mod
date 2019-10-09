@@ -1,4 +1,4 @@
-package com.brandonzx3.items.crafting;
+package com.brandonzx3.voidmod.items.crafting;
 
 import com.brandonzx3.voidmod.Main;
 import com.brandonzx3.voidmod.init.ModItems;
