@@ -36,7 +36,9 @@ public class Main{
     @EventHandler
     public static void PreInit(FMLPreInitializationEvent event){
     	RegistryHandler.PreInitRegistries();
+    	
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        
         OreDictionary.registerOre("gemRuby", new ItemStack(ModItems.RUBY));
         OreDictionary.registerOre("ingotCopper", new ItemStack(ModItems.COPPER_INGOT));
         OreDictionary.registerOre("ingotObsidian", new ItemStack(ModItems.OBSIDIAN_INGOT));
