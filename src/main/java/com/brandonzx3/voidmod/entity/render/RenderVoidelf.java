@@ -11,7 +11,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class RenderVoidelf extends RenderLiving<EntityVoidElf> {
 
-	public static final ResourceLocation TEXTURES = new ResourceLocation(Referance.MODID + ":textures/entity/VoidElf.png");
+	public static final ResourceLocation TEXTURES = new ResourceLocation(Referance.MODID + ":textures/entity/voidelf.png");
 	
 	public RenderVoidelf(RenderManager manager) {
 		super(manager, new ModelVoidElf(), 0.5F);
