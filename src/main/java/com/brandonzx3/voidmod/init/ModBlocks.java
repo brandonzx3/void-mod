@@ -29,4 +29,5 @@ public class ModBlocks{
     public static final Block BARITE_ORE = new BariteOre("barite_ore", Material.ROCK);
     public static final Block PYRITE_ORE = new PyriteOre("pyrite_ore", Material.ROCK);
     public static final Block AZURITE_ORE = new AzuriteOre("azurite_ore", Material.ROCK);
+    public static final Block VOID_DIAMOND_ORE = new BlockBase("void_diamond_ore", Material.ROCK);
 }
