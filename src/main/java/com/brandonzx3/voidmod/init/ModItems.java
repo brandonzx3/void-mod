@@ -63,6 +63,7 @@ public class ModItems{
     public static final Item AZURITE = new ItemBase("azurite");
     public static final Item PURE_AZURITE = new ItemBase("pure_azurite");
     public static final Item AZURITE_BATTERY = new ItemBase("azurite_battery");
+    public static final Item VOID_DIAMOND = new ItemBase("void_diamond");
 
     //tools
     public static final ItemSword OBSIDIAN_SWORD = new ToolSword("obsidian_sword", MATERIAL_OBSIDIAN);

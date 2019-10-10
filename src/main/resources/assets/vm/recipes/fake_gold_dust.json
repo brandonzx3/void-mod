@@ -6,7 +6,8 @@
         },
         
         {
-            "item": "vm:hammer"
+            "item": "vm:hammer",
+            "data": 32767
         }
     ],
     "result": {
