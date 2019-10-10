@@ -2,7 +2,6 @@ package com.brandonzx3.voidmod.items.crafting;
 
 import com.brandonzx3.voidmod.Main;
 import com.brandonzx3.voidmod.init.ModItems;
-import com.brandonzx3.voidmod.tabs.VoidModTab;
 import com.brandonzx3.voidmod.util.IHasModel;
 
 import net.minecraft.item.Item;

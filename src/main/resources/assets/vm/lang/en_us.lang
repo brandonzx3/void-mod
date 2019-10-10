@@ -91,3 +91,6 @@ item.redstone.azurite_helmate.name=Empowered Azurite Helmate
 item.redstone.azurite_chestplate.name=Empowered Azurite Chestplate
 item.redston.eazurite_leggings.name=Empowered Azurite Leggings
 item.redstone.azurite_boots.name=Empowered Azurite Boots
+
+//entitys
+entity.void_elf.name=Void Elf

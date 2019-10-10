@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class ModEntitys {
 	public static void registerEntitys() {
-		registerEntity("Void elf", EntityVoidElf.class, Referance.ENTITY_VOIDELF, 50, 12845311, 000000);
+		registerEntity("void_elf", EntityVoidElf.class, Referance.ENTITY_VOIDELF, 50, 12845311, 000000);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {

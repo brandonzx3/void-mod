@@ -39,8 +39,8 @@ public class ModItems{
     public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 6, 4000, 9, 6, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
-    public static final ToolMaterial MATERIAL_REDSTONE_AZURITE = EnumHealper.addToolMaterial("redstone_azurite", 5000, 17, 10, 7, 10);
-    public static final ArmorMaterial ARMOR_MATERIAL_REDSTONE_AZURITE = EnumHelper.addArmorMaterial("armor_material_redstone_azurite", Referance.MODID + ":redstone_azurite", 16, new int[] {10, 13, 16, 10}, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
+    public static final ToolMaterial MATERIAL_REDSTONE_AZURITE = EnumHelper.addToolMaterial("redstone_azurite", 7, 5000, 12, 8, 15);
+    public static final ArmorMaterial ARMOR_MATERIAL_REDSTONE_AZURITE = EnumHelper.addArmorMaterial("armor_material_redstone_azurite", Referance.MODID + ":redstone_azurite", 16, new int[] {13, 16, 19, 13}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 
 
     //items
@@ -113,7 +113,7 @@ public class ModItems{
     public static final Item AZURITE_BOOTS = new ArmorBase("azurite_boots", ARMOR_MATERIAL_AZURITE, 1, EntityEquipmentSlot.FEET);
     
     public static final Item REDSTONE_AZURITE_HEMLATE = new ArmorBase("redstone_azurite_helmate", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.HEAD);
-    public static final Item REDSTONE_AZURITE_CHESTPLATE = new ArmorBase("redstone_azurite_chestplate", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.SHEST);
+    public static final Item REDSTONE_AZURITE_CHESTPLATE = new ArmorBase("redstone_azurite_chestplate", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.CHEST);
     public static final Item REDSTONE_AZURITE_LEGGINGS = new ArmorBase("redstone_azurite_leggings", ARMOR_MATERIAL_REDSTONE_AZURITE, 2, EntityEquipmentSlot.LEGS);
     public static final Item REDSTONE_AZURITE_BOOTS = new ArmorBase("redstone_azurite_boots", ARMOR_MATERIAL_REDSTONE_AZURITE, 1, EntityEquipmentSlot.FEET);
     

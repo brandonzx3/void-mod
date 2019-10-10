@@ -1,9 +1,7 @@
 package com.brandonzx3.voidmod.entity;
 
-import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityZombie;
-import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
@@ -17,7 +15,6 @@ public class EntityVoidElf extends EntityZombie {
 	
 	@Override
 	protected void applyEntityAttributes() {
-		// TODO Auto-generated method stub
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(6.0D);
 		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(40);
