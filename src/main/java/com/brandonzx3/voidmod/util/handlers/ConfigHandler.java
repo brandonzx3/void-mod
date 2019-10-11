@@ -14,7 +14,11 @@ public class ConfigHandler {
     public static boolean SPAWN_MOBS_IN_NETHER = true;
     public static boolean SPAWN_MOBS_IN_END = false;
 
-    public static int CURROPTED_ZOMBIE = 120;
+    public static int CURRUPTED_ZOMBIE_SPAWN_WEIGHT = 14;
+    public static int CURRUPTED_ZOMBIE_MIN = 1;
+    public static int CURRUPTED_ZOMBIE_MAX = 6;
+
+    public static int CURRUPTED_ZOMBIE = 120;
 
     public static void init(File file) {
         config = new Configuration(file);
@@ -25,8 +29,12 @@ public class ConfigHandler {
         SPAWN_MOBS_IN_NETHER = config.getBoolean("spawn mobs in nether", category, true, "spawn enemy entities in the nether");
         SPAWN_MOBS_IN_END = config.getBoolean("spawn mobs in end", category, false, "spawn enemy entities in the end");
 
+        CURRUPTED_ZOMBIE_SPAWN_WEIGHT = config.getInt("currupted zombie spawn weight", category, 14, 1, 20, "the spawn weight probability for currup");
+        CURRUPTED_ZOMBIE_MIN = config.getInt("currupted zombie min spawn", category, 1, 1, 20, "whe minimum spawn for currupted zombie");
+        CURRUPTED_ZOMBIE_MAX = config.getInt("currupted zombie max spawn", category, 6, 1, 20, "whe maximum spawn for currupted zombie");
+
         category = "entity ID settings";
-        CURROPTED_ZOMBIE = config.getInt("curropted zombie", category, 120, 120, 500, "change the ID for the curropted zombie");
+        CURRUPTED_ZOMBIE = config.getInt("currupted zombie", category, 120, 120, 500, "change the ID for the currupted zombie");
 
         config.save();
     }

@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class ModEntitys {
 	public static void registerEntitys() {
-		registerEntity("currupted_zombie", EntityCurruptedZombie.class, ConfigHandler.CURROPTED_ZOMBIE, 50, 12845311, 000000);
+		registerEntity("currupted_zombie", EntityCurruptedZombie.class, ConfigHandler.CURRUPTED_ZOMBIE, 50, 12845311, 000000);
 	}
 	
 	private static void registerEntity(String name, Class<? extends Entity> entity, int id, int range, int color1, int color2) {

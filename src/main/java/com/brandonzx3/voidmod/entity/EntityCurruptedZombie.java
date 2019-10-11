@@ -36,7 +36,7 @@ public class EntityCurruptedZombie extends EntityZombie {
 	protected boolean shouldBurnInDay() {
 		return false;
 	}
-	
+
 	@Override
 	protected SoundEvent getAmbientSound() {
 		return super.getAmbientSound();

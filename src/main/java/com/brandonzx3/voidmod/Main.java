@@ -79,7 +79,7 @@ public class Main{
         Biome[] spawnBiomes = getAllSpawnBiomes();
 
 
-        EntityRegistry.addSpawn(EntityCurruptedZombie.class, 14, 1, 6, EnumCreatureType.MONSTER, spawnBiomes);
+        EntityRegistry.addSpawn(EntityCurruptedZombie.class, ConfigHandler.CURRUPTED_ZOMBIE_SPAWN_WEIGHT, ConfigHandler.CURRUPTED_ZOMBIE_MIN, ConfigHandler.CURRUPTED_ZOMBIE_MAX, EnumCreatureType.MONSTER, spawnBiomes);
     }
 
     private static Biome[] getAllSpawnBiomes() {
