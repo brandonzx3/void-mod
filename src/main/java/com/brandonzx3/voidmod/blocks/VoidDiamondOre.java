@@ -1,5 +1,7 @@
 package com.brandonzx3.voidmod.blocks;
 
+import java.util.Random;
+
 import com.brandonzx3.voidmod.init.ModItems;
 
 import net.minecraft.block.SoundType;
@@ -19,5 +21,6 @@ public class VoidDiamondOre extends BlockBase {
     }
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune){
-        return ModItems.Void_Diamond;
+        return ModItems.VOID_DIAMOND;
     }
+}

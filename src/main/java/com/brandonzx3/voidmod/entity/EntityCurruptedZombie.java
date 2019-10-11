@@ -10,9 +10,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class EntityVoidElf extends EntityZombie {
+public class EntityCurruptedZombie extends EntityZombie {
 
-	public EntityVoidElf(World worldIn) {
+	public EntityCurruptedZombie(World worldIn) {
 		super(worldIn);
 		
 	}

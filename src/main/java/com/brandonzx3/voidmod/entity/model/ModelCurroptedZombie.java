@@ -9,17 +9,15 @@ import net.minecraft.util.math.MathHelper;
  * ModelZombie - Either Mojang or a mod author
  * Created using Tabula 7.0.0
  */
-public class ModelVoidElf extends ModelBase {
+public class ModelCurroptedZombie extends ModelBase {
     public ModelRenderer arm_right;
     public ModelRenderer leg_right;
     public ModelRenderer head;
     public ModelRenderer body;
     public ModelRenderer arm_left;
     public ModelRenderer leg_left;
-    public ModelRenderer tentical;
-    public ModelRenderer tentical_2;
 
-    public ModelVoidElf() {
+    public ModelCurroptedZombie() {
         this.textureWidth = 64;
         this.textureHeight = 64;
         this.arm_right = new ModelRenderer(this, 40, 16);
@@ -34,10 +32,6 @@ public class ModelVoidElf extends ModelBase {
         this.head = new ModelRenderer(this, 0, 0);
         this.head.setRotationPoint(0.0F, 0.0F, 0.0F);
         this.head.addBox(-4.0F, -8.0F, -4.0F, 8, 8, 8, 0.0F);
-        this.tentical = new ModelRenderer(this, 48, 0);
-        this.tentical.setRotationPoint(1.1F, 3.8F, 0.0F);
-        this.tentical.addBox(0.0F, 0.0F, 0.0F, 2, 18, 2, 0.0F);
-        this.setRotateAngle(tentical, 0.7285004297824331F, 0.0F, 0.0F);
         this.body = new ModelRenderer(this, 16, 16);
         this.body.setRotationPoint(0.0F, 0.0F, 0.0F);
         this.body.addBox(-4.0F, 0.0F, -2.0F, 8, 12, 4, 0.0F);
@@ -48,10 +42,6 @@ public class ModelVoidElf extends ModelBase {
         this.leg_right = new ModelRenderer(this, 0, 16);
         this.leg_right.setRotationPoint(-1.9F, 12.0F, 0.1F);
         this.leg_right.addBox(-2.0F, 0.0F, -2.0F, 4, 12, 4, 0.0F);
-        this.tentical_2 = new ModelRenderer(this, 48, 0);
-        this.tentical_2.setRotationPoint(-3.0F, 3.8F, 0.0F);
-        this.tentical_2.addBox(0.0F, 0.0F, 0.0F, 2, 18, 2, 0.0F);
-        this.setRotateAngle(tentical_2, 0.7302457590344275F, 0.0F, 0.0F);
     }
 
     @Override
@@ -59,11 +49,9 @@ public class ModelVoidElf extends ModelBase {
         this.arm_right.render(f5);
         this.arm_left.render(f5);
         this.head.render(f5);
-        this.tentical.render(f5);
         this.body.render(f5);
         this.leg_left.render(f5);
         this.leg_right.render(f5);
-        this.tentical_2.render(f5);
     }
 
     /**
