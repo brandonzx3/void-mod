@@ -38,7 +38,7 @@ public class ModItems{
     public static final ToolMaterial MATERIAL_AZURITE = EnumHelper.addToolMaterial("material_azurite", 6, 4000, 9, 8, 10);
     public static final ToolMaterial MATERIAL_TUNGSTEN = EnumHelper.addToolMaterial("material_tungsten", 2, 250, 6, 2, 14);
     public static final ToolMaterial MATERIAL_REDSTONE = EnumHelper.addToolMaterial("redstone", 3, 3000, 15, 6, 10);
-    public static final ToolMaterial MATERIAL_REDSTONE_AZURITE = EnumHelper.addToolMaterial("redstone_azurite", 7, 5000, 12, 13, 15);
+    public static final ToolMaterial MATERIAL_REDSTONE_AZURITE = EnumHelper.addToolMaterial("redstone_azurite", 7, 5000, 12, 15, 15);
     public static final ArmorMaterial ARMOR_MATERIAL_REDSTONE_AZURITE = EnumHelper.addArmorMaterial("armor_material_redstone_azurite", Referance.MODID + ":redstone_azurite", 16, new int[] {13, 16, 19, 13}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 0.0F);
 
 
@@ -91,10 +91,10 @@ public class ModItems{
     public static final ItemPickaxe AZURITE_PICKAXE = new ToolPickaxe("azurite_pickaxe", MATERIAL_AZURITE);
     public static final ToolAxe AZURITE_AXE = new ToolAxe("azurite_axe", MATERIAL_AZURITE, 5.0F, -3.1F);
     
-    public static final ItemSword REDSTONE_AZURITE_SWORD = new ToolSword("redstone_azurite_sword", MATERIAL_AZURITE);
-    public static final ItemSpade  REDSTONE_AZURITE_SHOVEL = new ToolSpade("redstone_azurite_shovel", MATERIAL_AZURITE);
-    public static final ItemPickaxe REDSTONE_AZURITE_PICKAXE = new ToolPickaxe("redstone_azurite_pickaxe", MATERIAL_AZURITE);
-    public static final ToolAxe REDSTONE_AZURITE_AXE = new ToolAxe("redstone_azurite_axe", MATERIAL_AZURITE, 5.0F, -3.1F);
+    public static final ItemSword REDSTONE_AZURITE_SWORD = new ToolSword("redstone_azurite_sword", MATERIAL_REDSTONE_AZURITE);
+    public static final ItemSpade  REDSTONE_AZURITE_SHOVEL = new ToolSpade("redstone_azurite_shovel", MATERIAL_REDSTONE_AZURITE);
+    public static final ItemPickaxe REDSTONE_AZURITE_PICKAXE = new ToolPickaxe("redstone_azurite_pickaxe", MATERIAL_REDSTONE_AZURITE);
+    public static final ToolAxe REDSTONE_AZURITE_AXE = new ToolAxe("redstone_azurite_axe", MATERIAL_REDSTONE_AZURITE, 5.0F, -3.1F);
 
     //armor
     public static final Item OBSIDIAN_HELMATE = new ArmorBase("obsidian_helmate", ARMOR_MATERIAL_OBSIDIAN, 1, EntityEquipmentSlot.HEAD);

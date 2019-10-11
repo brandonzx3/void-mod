@@ -20,6 +20,7 @@ item.fake_gold_dust.name=Fake Gold Dust
 item.glass_shard.name=Glass Shard
 item.pure_azurite.name=Pure Azurite
 item.azurite_battery.name=Azurite Battery
+item.void_diamond.name=Void Diamond
 
 //blocks
 tile.ruby_block.name=Block of Ruby
@@ -36,6 +37,8 @@ tile.barite_ore.name=Barite Ore
 tile.pyrite_ore.name=Pyrite Ore
 
 tile.azurite_ore.name=Azurite Ore
+
+tile.void_diamond_ore.name= Void Diamond Ore
 
 //tabs
 itemGroup.voidmodtab=Void Mod

@@ -16,7 +16,7 @@ public class VoidDiamondOre extends BlockBase {
         setSoundType(SoundType.STONE);
         setHardness(5.0F);
         setResistance(15.0F);
-        setHarvestLevel("pickaxe", 5);
+        setHarvestLevel("pickaxe", 6);
         
     }
     @Override
