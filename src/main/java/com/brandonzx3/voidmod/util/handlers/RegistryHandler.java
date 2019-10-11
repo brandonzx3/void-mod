@@ -38,9 +38,4 @@ public class RegistryHandler {
             }
         }
     }
-    
-    public static void PreInitRegistries() {
-		ModEntitys.registerEntitys();
-        RenderHandler.registerEntityRenders();
-	}
 }

@@ -49,56 +49,16 @@ public class Main{
 
     @EventHandler
     public static void PreInit(FMLPreInitializationEvent event){
-    	RegistryHandler.PreInitRegistries();
-    	
-        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
-
-
-        OreDictionary.registerOre("gemRuby", new ItemStack(ModItems.RUBY));
-        OreDictionary.registerOre("ingotCopper", new ItemStack(ModItems.COPPER_INGOT));
-        OreDictionary.registerOre("ingotObsidian", new ItemStack(ModItems.OBSIDIAN_INGOT));
-        
-        OreDictionary.registerOre("wireCopper", new ItemStack(ModItems.COPPER_WIRE));
-        
-        OreDictionary.registerOre("oreRuby", new ItemStack(ModBlocks.RUBY_ORE));
-        OreDictionary.registerOre("oreCopper", new ItemStack(ModBlocks.COPPER_ORE));
-        
-        OreDictionary.registerOre("blockRuby", new ItemStack(ModBlocks.RUBY_BLOCK));
-        OreDictionary.registerOre("blockCopper", new ItemStack(ModBlocks.COPPER_BLOCK));
-
-        ConfigHandler.registerConfig(event);
+    	proxy.PreInit(event);
     }
 
     @EventHandler
     public static void init(FMLInitializationEvent event){
-        ModRecipes.init();
+        proxy.init(event);
     }
 
     @EventHandler
     public static void PostInit(FMLPostInitializationEvent event){
-        Biome[] spawnBiomes = getAllSpawnBiomes();
-
-
-        EntityRegistry.addSpawn(EntityCurruptedZombie.class, ConfigHandler.CURRUPTED_ZOMBIE_SPAWN_WEIGHT, ConfigHandler.CURRUPTED_ZOMBIE_MIN, ConfigHandler.CURRUPTED_ZOMBIE_MAX, EnumCreatureType.MONSTER, spawnBiomes);
-    }
-
-    private static Biome[] getAllSpawnBiomes() {
-        LinkedList<Biome> list = new LinkedList<>();
-        Collection<Biome> biomes = ForgeRegistries.BIOMES.getValuesCollection();
-        for (Biome bgb : biomes) {
-            if (bgb instanceof BiomeVoid) {
-                continue;
-            }
-            if (bgb instanceof BiomeEnd && !ConfigHandler.SPAWN_MOBS_IN_END) {
-                continue;
-            }
-            if (bgb instanceof BiomeHell && !ConfigHandler.SPAWN_MOBS_IN_NETHER) {
-                continue;
-            }
-            if (!list.contains(bgb)) {
-                list.add(bgb);
-            }
-        }
-        return list.toArray(new Biome[0]);
+        proxy.PostInit(event);
     }
 }
