@@ -1,5 +1,6 @@
 package com.brandonzx3.voidmod;
 
+import java.io.File;
 import java.util.Collection;
 import java.util.LinkedList;
 
@@ -10,6 +11,7 @@ import com.brandonzx3.voidmod.init.ModRecipes;
 import com.brandonzx3.voidmod.proxy.CommonProxy;
 import com.brandonzx3.voidmod.tabs.VoidModTab;
 import com.brandonzx3.voidmod.util.Referance;
+import com.brandonzx3.voidmod.util.handlers.ConfigHandler;
 import com.brandonzx3.voidmod.util.handlers.RegistryHandler;
 import com.brandonzx3.voidmod.world.ModWorldGen;
 
@@ -20,8 +22,6 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeEnd;
 import net.minecraft.world.biome.BiomeHell;
 import net.minecraft.world.biome.BiomeVoid;
-import net.minecraftforge.common.BiomeDictionary;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -32,11 +32,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid = Referance.MODID, name = Referance.NAME, version = Referance.VERSION)
 public class Main{
+
+    public static File config;
 
     public static final CreativeTabs VOIDMODTAB = new VoidModTab("voidmodtab");
 
@@ -64,6 +65,8 @@ public class Main{
         
         OreDictionary.registerOre("blockRuby", new ItemStack(ModBlocks.RUBY_BLOCK));
         OreDictionary.registerOre("blockCopper", new ItemStack(ModBlocks.COPPER_BLOCK));
+
+        ConfigHandler.registerConfig(event);
     }
 
     @EventHandler
@@ -76,7 +79,7 @@ public class Main{
         Biome[] spawnBiomes = getAllSpawnBiomes();
 
 
-        EntityRegistry.addSpawn(EntityCurruptedZombie.class, 15, 1, 12, EnumCreatureType.MONSTER, spawnBiomes);
+        EntityRegistry.addSpawn(EntityCurruptedZombie.class, 14, 1, 6, EnumCreatureType.MONSTER, spawnBiomes);
     }
 
     private static Biome[] getAllSpawnBiomes() {
@@ -86,10 +89,10 @@ public class Main{
             if (bgb instanceof BiomeVoid) {
                 continue;
             }
-            if (bgb instanceof BiomeEnd) {
+            if (bgb instanceof BiomeEnd && !ConfigHandler.SPAWN_MOBS_IN_END) {
                 continue;
             }
-            if (bgb instanceof BiomeHell) {
+            if (bgb instanceof BiomeHell && !ConfigHandler.SPAWN_MOBS_IN_NETHER) {
                 continue;
             }
             if (!list.contains(bgb)) {
