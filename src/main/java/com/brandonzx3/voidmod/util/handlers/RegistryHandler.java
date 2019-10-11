@@ -1,7 +1,6 @@
 package com.brandonzx3.voidmod.util.handlers;
 
 import com.brandonzx3.voidmod.init.ModBlocks;
-import com.brandonzx3.voidmod.init.ModEntitys;
 import com.brandonzx3.voidmod.init.ModItems;
 import com.brandonzx3.voidmod.util.IHasModel;
 

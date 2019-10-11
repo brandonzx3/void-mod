@@ -1,12 +1,9 @@
 package com.brandonzx3.voidmod.entity;
 
-import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
 public class EntityCurruptedZombie extends EntityZombie {
@@ -19,6 +16,9 @@ public class EntityCurruptedZombie extends EntityZombie {
 
 	@Override
 	public boolean getCanSpawnHere() {
+		if(this.world.isDaytime()) {
+			return false;
+		}
 		return true;
 	}
 

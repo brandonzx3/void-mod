@@ -9,7 +9,6 @@ import com.brandonzx3.voidmod.init.ModEntitys;
 import com.brandonzx3.voidmod.init.ModItems;
 import com.brandonzx3.voidmod.init.ModRecipes;
 import com.brandonzx3.voidmod.util.handlers.ConfigHandler;
-import com.brandonzx3.voidmod.util.handlers.RegistryHandler;
 import com.brandonzx3.voidmod.world.ModWorldGen;
 
 import net.minecraft.entity.EnumCreatureType;

@@ -87,10 +87,10 @@ item.azurite_chestplate.name=Azurite Chestplate
 item.azurite_leggings.name=Azurite Leggings
 item.azurite_boots.name=Azurite Boots
 
-item.redstone.azurite_helmate.name=Empowered Azurite Helmate
-item.redstone.azurite_chestplate.name=Empowered Azurite Chestplate
-item.redston.eazurite_leggings.name=Empowered Azurite Leggings
-item.redstone.azurite_boots.name=Empowered Azurite Boots
+item.redstone_azurite_helmate.name=Empowered Azurite Helmate
+item.redstone_azurite_chestplate.name=Empowered Azurite Chestplate
+item.redstone_azurite_leggings.name=Empowered Azurite Leggings
+item.redstone_azurite_boots.name=Empowered Azurite Boots
 
 //entitys
 entity.currupted_zombie.name=Curropted Zombie
