@@ -3,6 +3,7 @@ package com.brandonzx3.voidmod.proxy;
 import java.util.Collection;
 import java.util.LinkedList;
 
+import com.brandonzx3.voidmod.entity.EntityCurruptedSkeleton;
 import com.brandonzx3.voidmod.entity.EntityCurruptedZombie;
 import com.brandonzx3.voidmod.init.ModBlocks;
 import com.brandonzx3.voidmod.init.ModEntitys;
@@ -62,6 +63,7 @@ public class CommonProxy{
 
 
         EntityRegistry.addSpawn(EntityCurruptedZombie.class, ConfigHandler.CURRUPTED_ZOMBIE_SPAWN_WEIGHT, ConfigHandler.CURRUPTED_ZOMBIE_MIN, ConfigHandler.CURRUPTED_ZOMBIE_MAX, EnumCreatureType.MONSTER, spawnBiomes);
+        EntityRegistry.addSpawn(EntityCurruptedSkeleton.class, ConfigHandler.CURRUPTED_SKELETON_SPAWN_WEIGHT, ConfigHandler.CURRUPTED_SKELETON_MIN, ConfigHandler.CURRUPTED_SKELETON_MAX, EnumCreatureType.MONSTER, spawnBiomes);
     }
 
     private static Biome[] getAllSpawnBiomes() {

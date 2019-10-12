@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "vm:items/redstone_azurite_axe"
+    }
+ }
