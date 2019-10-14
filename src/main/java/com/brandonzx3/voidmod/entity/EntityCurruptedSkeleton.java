@@ -10,7 +10,6 @@ public class EntityCurruptedSkeleton extends EntitySkeleton {
 
 	public EntityCurruptedSkeleton(World worldIn) {
 		super(worldIn);
-		
 	}
 	
 
@@ -21,8 +20,6 @@ public class EntityCurruptedSkeleton extends EntitySkeleton {
 		}
 		return true;
 	}
-
-
 
 	@Override
 	protected void applyEntityAttributes() {
@@ -45,5 +42,10 @@ public class EntityCurruptedSkeleton extends EntitySkeleton {
 	@Override
 	protected SoundEvent getDeathSound() {
 		return super.getDeathSound();
+	}
+
+	@Override
+	protected SoundEvent getStepSound() {
+		return this.getStepSound();
 	}
 }
