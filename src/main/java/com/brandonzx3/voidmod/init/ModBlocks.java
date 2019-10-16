@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.brandonzx3.voidmod.blocks.AzuriteOre;
 import com.brandonzx3.voidmod.blocks.BariteOre;
-import com.brandonzx3.voidmod.blocks.BlockBase;
 import com.brandonzx3.voidmod.blocks.CopperBlock;
 import com.brandonzx3.voidmod.blocks.CopperOre;
 import com.brandonzx3.voidmod.blocks.PyriteOre;

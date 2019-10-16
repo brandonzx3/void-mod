@@ -1,0 +1,55 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "All Powered Up",
+            "color": "dark_purple",
+            "bold": true
+        },
+        "description": {
+            "text": "Craft Empowered Azurite Armor"
+        },
+        "icon": {
+            "item": "vm:redstone_azurite_chestplate"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "vm:void/azurite_armor",
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "vm:redstone_azurite_helmate",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        },
+
+                        "item": "vm:redstone_azurite_chestplate",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        },
+
+                        "item": "vm:redstone_azurite_leggings",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        },
+
+                        "item": "vm:redstone_azurite_boots",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

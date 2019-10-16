@@ -1,27 +1,28 @@
 {
     "display": {
         "icon": {
-            "item": "vm:obsidian_ingot"
+            "item": "vm:azurite"
         },
         "title": {
-            "text": "Void Mod Introduction",
+            "text": "AZURITE!",
             "color": "dark_purple",
             "bold": true
         },
         "description": {
-            "text": "Smelt Obsidian"
+            "text": "Find Some Azurite"
         },
-        "background": "minecraft:textures/blocks/obsidian.png",
-        "show_toast": false,
-        "announce_to_chat": false
+        "background": "vm:textures/blocks/azurite_ore.png",
+        "show_toast": true,
+        "announce_to_chat": true
     },
+    "parent": "vm:void/ruby_pickaxe",
     "criteria": {
         "furnace": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "vm:obsidian_ingot"
+                        "item": "vm:azurite"
                     }
                 ]
             }

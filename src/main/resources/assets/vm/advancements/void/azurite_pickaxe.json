@@ -2,29 +2,29 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Shinier",
+            "text": "So we Back In The Mine",
             "color": "dark_purple",
             "bold": true
         },
         "description": {
-            "text": "craft a ruby pickaxe"
+            "text": "Craft An Azurite Pickaxe"
         },
         "icon": {
-            "item": "vm:ruby_pickaxe"
+            "item": "vm:azurite_pickaxe"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "vm:intro/ruby",
+    "parent": "vm:void/azurite",
     "criteria": {
         "c1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "vm:ruby_pickaxe",
+                        "item": "vm:azurite_pickaxe",
                         "count": {
                             "min": 1,
                             "max": 1

@@ -2,29 +2,29 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Obsidian Pickaxe",
+            "text": "Shiny",
             "color": "dark_purple",
             "bold": true
         },
         "description": {
-            "text": "Craft An Obsidian Pickaxe"
+            "text": "find a ruby"
         },
         "icon": {
-            "item": "vm:obsidian_pickaxe"
+            "item": "vm:ruby"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "vm:intro/root",
+    "parent": "vm:void/pickaxe",
     "criteria": {
         "c1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "vm:obsidian_pickaxe",
+                        "item": "vm:ruby",
                         "count": {
                             "min": 1,
                             "max": 1

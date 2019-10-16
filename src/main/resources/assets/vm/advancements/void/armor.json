@@ -17,7 +17,7 @@
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "vm:intro/root",
+    "parent": "vm:void/root",
     "criteria": {
         "c1": {
             "trigger": "minecraft:inventory_changed",

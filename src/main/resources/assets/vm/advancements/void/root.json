@@ -1,19 +1,19 @@
 {
     "display": {
         "icon": {
-            "item": "vm:azurite"
+            "item": "vm:obsidian_ingot"
         },
         "title": {
-            "text": "AZURITE!",
+            "text": "Void Mod",
             "color": "dark_purple",
             "bold": true
         },
         "description": {
-            "text": "Find Some Azurite"
+            "text": "Make An Obsidian Ingot"
         },
-        "background": "vm:textures/blocks/azurite_ore.png",
-        "show_toast": true,
-        "announce_to_chat": true
+        "background": "minecraft:textures/blocks/obsidian.png",
+        "show_toast": false,
+        "announce_to_chat": false
     },
     "criteria": {
         "furnace": {
@@ -21,7 +21,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "vm:azurite"
+                        "item": "vm:obsidian_ingot"
                     }
                 ]
             }

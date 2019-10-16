@@ -2,29 +2,29 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Shiny",
+            "text": "Ok Ricegum",
             "color": "dark_purple",
             "bold": true
         },
         "description": {
-            "text": "find a ruby"
+            "text": "Craft a Ruby Block"
         },
         "icon": {
-            "item": "vm:ruby"
+            "item": "vm:ruby_block"
         },
         "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
-    "parent": "vm:intro/pickaxe",
+    "parent": "vm:void/ruby",
     "criteria": {
         "c1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "item": "vm:ruby",
+                        "item": "vm:ruby_block",
                         "count": {
                             "min": 1,
                             "max": 1
