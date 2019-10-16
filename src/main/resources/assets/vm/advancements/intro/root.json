@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "vm:obsidian_ingot"
+        },
+        "title": {
+            "text": "Void Mod Introduction",
+            "color": "dark_purple",
+            "bold": true
+        },
+        "description": {
+            "text": "Smelt Obsidian"
+        },
+        "background": "minecraft:textures/blocks/obsidian.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "furnace": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "vm:obsidian_ingot"
+                    }
+                ]
+            }
+        }
+    }
+}
