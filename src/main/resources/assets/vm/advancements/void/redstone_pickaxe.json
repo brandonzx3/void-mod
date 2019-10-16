@@ -1,0 +1,37 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Got Our Pickaxe swinging From Side to Side",
+            "color": "dark_purple",
+            "bold": true
+        },
+        "description": {
+            "text": "Craft An Azurite Pickaxe"
+        },
+        "icon": {
+            "item": "vm:redstone_azurite_pickaxe"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "vm:void/azurite_pickaxe",
+    "criteria": {
+        "c1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "vm:redstone_azurite_pickaxe",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
