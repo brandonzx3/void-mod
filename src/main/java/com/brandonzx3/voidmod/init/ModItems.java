@@ -75,7 +75,6 @@ public class ModItems{
     public static final ToolPickaxe REDSTONE_PICKAXE = new ToolPickaxe("redstone_pickaxe", MATERIAL_REDSTONE);
     public static final ToolAxe REDSTONE_AXE= new ToolAxe("redstone_axe", MATERIAL_REDSTONE, 9.0F, -3.1F);
 
-
     public static final ItemSword RUBY_SWORD = new ToolSword("ruby_sword", MATERIAL_RUBY);
     public static final ItemSpade RUBY_SHOVEL = new ToolSpade("ruby_shovel", MATERIAL_RUBY);
     public static final ItemPickaxe RUBY_PICKAXE = new ToolPickaxe("ruby_pickaxe", MATERIAL_RUBY);
