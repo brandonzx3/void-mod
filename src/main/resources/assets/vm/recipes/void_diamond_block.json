@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+   
+    "pattern":
+    [
+        "ddd",
+        "ddd",
+        "ddd"
+    ],
+   
+    "key":
+    {
+        "d":
+        {
+            "item": "vm:void_diamond"
+        }
+    },
+   
+    "result":
+    {
+        "item": "vm:void_diamond_block",
+        "count": 1
+    }
+}

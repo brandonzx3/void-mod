@@ -38,7 +38,8 @@ tile.pyrite_ore.name=Pyrite Ore
 
 tile.azurite_ore.name=Azurite Ore
 
-tile.void_diamond_ore.name= Void Diamond Ore
+tile.void_diamond_ore.name=Void Diamond Ore
+tile.void_diamond_block.name=Void Diamond Block
 
 //tabs
 itemGroup.voidmodtab=Void Mod

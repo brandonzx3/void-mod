@@ -3,7 +3,6 @@ package com.brandonzx3.voidmod.util.handlers;
 import java.io.File;
 
 import com.brandonzx3.voidmod.Main;
-import com.brandonzx3.voidmod.util.Referance;
 
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -38,20 +37,14 @@ public class ConfigHandler {
         CURRUPTED_ZOMBIE_MIN = config.getInt("currupted zombie min spawn", category, 1, 1, 20, "whe minimum spawn for currupted zombie");
         CURRUPTED_ZOMBIE_MAX = config.getInt("currupted zombie max spawn", category, 6, 1, 20, "whe maximum spawn for currupted zombie");
 
-        CURRUPTED_SKELETON_SPAWN_WEIGHT = config.getInt("currupted skeleton spawn weight", category, 14, 1, 20, "the spawn weight probability for currupted skeleton");
-        CURRUPTED_SKELETON_MIN = config.getInt("currupted skeleton min spawn", category, 1, 1, 20, "whe minimum spawn for currupted skeleton");
-        CURRUPTED_SKELETON_MAX = config.getInt("currupted skeleton max spawn", category, 6, 1, 20, "whe maximum spawn for currupted skeleton");
-
         category = "entity ID settings";
         CURRUPTED_ZOMBIE = config.getInt("currupted zombie", category, 120, 120, 500, "change the ID for the currupted zombie");
-        CURRUPTED_SKELETON = config.getInt("currupted skeleton", category, 121, 120, 500, "change the ID for the currupted skeleton");
-
         config.save();
     }
 
     public static void registerConfig(FMLPreInitializationEvent event) {
-        Main.config = new File(event.getModConfigurationDirectory() + "/" + Referance.MODID);
+        Main.config = new File(event.getModConfigurationDirectory() + "/void mod");
         Main.config.mkdirs();
-        init(new File(Main.config.getPath(), Referance.MODID + ".cfg"));
+        init(new File(Main.config.getPath(), "void mod.cfg"));
     }
 }
