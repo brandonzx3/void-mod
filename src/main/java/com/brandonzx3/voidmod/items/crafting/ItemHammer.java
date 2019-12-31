@@ -12,7 +12,7 @@ public class ItemHammer extends Item implements IHasModel {
     	setUnlocalizedName(name);
     	setRegistryName(name);
         setNoRepair();
-        setMaxDamage(40);
+        setMaxDamage(39);
         setMaxStackSize(1);
         setCreativeTab(Main.VOIDMODTAB);
         ModItems.ITEMS.add(this);

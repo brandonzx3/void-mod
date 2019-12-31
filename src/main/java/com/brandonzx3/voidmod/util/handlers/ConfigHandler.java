@@ -17,12 +17,7 @@ public class ConfigHandler {
     public static int CURRUPTED_ZOMBIE_MIN = 1;
     public static int CURRUPTED_ZOMBIE_MAX = 6;
 
-    public static int CURRUPTED_SKELETON_SPAWN_WEIGHT = 14;
-    public static int CURRUPTED_SKELETON_MIN = 1;
-    public static int CURRUPTED_SKELETON_MAX = 6;
-
     public static int CURRUPTED_ZOMBIE = 120;
-    public static int CURRUPTED_SKELETON = 121;
 
     public static void init(File file) {
         config = new Configuration(file);

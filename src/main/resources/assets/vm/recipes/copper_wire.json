@@ -12,7 +12,8 @@
     {
         "c":
         {
-            "item": "vm:copper_Ingot"
+            "type": "forge:ore_dict",
+            "ore": "ingotCopper"
         }
     },
    
