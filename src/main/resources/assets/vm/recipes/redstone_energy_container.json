@@ -22,7 +22,8 @@
 
         "w":
         {
-            "item": "vm:copper_wire"
+            "type": "forge:ore_dict",
+            "ore": "wireCopper"
         }
     },
    

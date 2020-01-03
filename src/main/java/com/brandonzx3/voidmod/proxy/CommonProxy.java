@@ -4,7 +4,9 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 import com.brandonzx3.voidmod.entity.EntityCurruptedZombie;
+import com.brandonzx3.voidmod.init.ModBiomes;
 import com.brandonzx3.voidmod.init.ModBlocks;
+import com.brandonzx3.voidmod.init.ModDimension;
 import com.brandonzx3.voidmod.init.ModEntitys;
 import com.brandonzx3.voidmod.init.ModItems;
 import com.brandonzx3.voidmod.init.ModRecipes;
@@ -33,8 +35,12 @@ public class CommonProxy{
 
     public void PreInit(FMLPreInitializationEvent event) {
         ModEntitys.registerEntitys();
-    	
+        
+        ModDimension.registerDimensions();
+
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+
+        ModBiomes.registerBiomes();
 
 
         OreDictionary.registerOre("gemRuby", new ItemStack(ModItems.RUBY));

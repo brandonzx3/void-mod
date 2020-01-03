@@ -21,6 +21,7 @@ item.glass_shard.name=Glass Shard
 item.pure_azurite.name=Pure Azurite
 item.azurite_battery.name=Azurite Battery
 item.void_diamond.name=Void Diamond
+item.void_fragment.name=Void Fragment
 
 //blocks
 tile.ruby_block.name=Block of Ruby

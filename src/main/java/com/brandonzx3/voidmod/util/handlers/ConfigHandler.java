@@ -19,6 +19,8 @@ public class ConfigHandler {
 
     public static int CURRUPTED_ZOMBIE = 120;
 
+    public static int DIMENSION_VOID = 2;
+
     public static void init(File file) {
         config = new Configuration(file);
 
@@ -35,6 +37,9 @@ public class ConfigHandler {
         category = "entity ID settings";
         CURRUPTED_ZOMBIE = config.getInt("currupted zombie", category, 120, 120, 500, "change the ID for the currupted zombie");
         config.save();
+
+        category = "dimension settings";
+        DIMENSION_VOID = config.getInt("void dimension", category, 2, 2, 500, "change the ID for the void dimension");
     }
 
     public static void registerConfig(FMLPreInitializationEvent event) {

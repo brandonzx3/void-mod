@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "vm:void_diamond"
+        },
+        
+        {
+            "item": "vm:hammer",
+            "data": 32767
+        }
+    ],
+    "result": {
+        "item": "vm:void_fragment",
+        "count": 2
+    }
+}
