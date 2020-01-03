@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.brandonzx3.voidmod.blocks.AzuriteOre;
 import com.brandonzx3.voidmod.blocks.BariteOre;
+import com.brandonzx3.voidmod.blocks.BlockBase;
 import com.brandonzx3.voidmod.blocks.CopperBlock;
 import com.brandonzx3.voidmod.blocks.CopperOre;
 import com.brandonzx3.voidmod.blocks.PyriteOre;
@@ -32,4 +33,5 @@ public class ModBlocks{
     public static final Block AZURITE_ORE = new AzuriteOre("azurite_ore", Material.ROCK);
     public static final Block VOID_DIAMOND_ORE = new VoidDiamondOre("void_diamond_ore", Material.ROCK);
     public static final Block VOID_DIAMOND_BLOCK = new VoidDiamondBlock("void_diamond_block", Material.IRON);
+    public static final Block CURRUPTED_COBBLESTONE = new BlockBase("currupted_cobblestone", Material.ROCK);
 }

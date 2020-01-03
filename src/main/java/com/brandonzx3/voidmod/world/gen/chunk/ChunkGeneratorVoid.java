@@ -6,7 +6,7 @@ import java.util.Random;
 import javax.annotation.Nullable;
 
 import com.brandonzx3.voidmod.init.ModBiomes;
-
+import com.brandonzx3.voidmod.init.ModBlocks;
 
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
@@ -14,7 +14,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
@@ -27,11 +26,12 @@ import net.minecraft.world.gen.NoiseGeneratorOctaves;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.terraingen.ChunkGeneratorEvent.InitNoiseField;
-import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.InitNoiseGensEvent.ContextHell;
 import net.minecraftforge.event.terraingen.PopulateChunkEvent;
 import net.minecraftforge.event.terraingen.TerrainGen;
 import net.minecraftforge.fml.common.eventhandler.Event;
+
+//nether type generation
 
 public class ChunkGeneratorVoid implements IChunkGenerator
 {
@@ -39,7 +39,7 @@ public class ChunkGeneratorVoid implements IChunkGenerator
     protected static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
     
     //Block that is usually Netherrack
-    protected static final IBlockState MAIN_BLOCK = Blocks.BOOKSHELF.getDefaultState();
+    protected static final IBlockState MAIN_BLOCK = ModBlocks.CURRUPTED_COBBLESTONE.getDefaultState();
     //Block that is usally Lava
     protected static final IBlockState YOUR_LIQUID = Blocks.WATER.getDefaultState();
     //Blocks that are usally gravel and soul sand
@@ -94,11 +94,7 @@ public class ChunkGeneratorVoid implements IChunkGenerator
 
     public void prepareHeights(int x, int z, ChunkPrimer primer)
     {
-        int i = 4;
         int j = this.world.getSeaLevel() / 2 + 1;
-        int k = 5;
-        int l = 17;
-        int i1 = 5;
         this.buffer = this.getHeights(this.buffer, x * 4, 0, z * 4, 5, 17, 5);
 
         for (int j1 = 0; j1 < 4; ++j1)
@@ -107,7 +103,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
             {
                 for (int l1 = 0; l1 < 16; ++l1)
                 {
-                    double d0 = 0.125D;
                     double d1 = this.buffer[((j1 + 0) * 5 + k1 + 0) * 17 + l1 + 0];
                     double d2 = this.buffer[((j1 + 0) * 5 + k1 + 1) * 17 + l1 + 0];
                     double d3 = this.buffer[((j1 + 1) * 5 + k1 + 0) * 17 + l1 + 0];
@@ -119,7 +114,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
 
                     for (int i2 = 0; i2 < 8; ++i2)
                     {
-                        double d9 = 0.25D;
                         double d10 = d1;
                         double d11 = d2;
                         double d12 = (d3 - d1) * 0.25D;
@@ -127,7 +121,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
 
                         for (int j2 = 0; j2 < 4; ++j2)
                         {
-                            double d14 = 0.25D;
                             double d15 = d10;
                             double d16 = (d11 - d10) * 0.25D;
 
@@ -170,7 +163,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
     {
         if (!ForgeEventFactory.onReplaceBiomeBlocks(this, x, z, primer, this.world)) return;
         int i = this.world.getSeaLevel() + 1;
-        double d0 = 0.03125D;
         this.slowsandNoise = this.slowsandGravelNoiseGen.generateNoiseOctaves(this.slowsandNoise, x * 16, z * 16, 0, 16, 16, 1, 0.03125D, 0.03125D, 1.0D);
         this.gravelNoise = this.slowsandGravelNoiseGen.generateNoiseOctaves(this.gravelNoise, x * 16, 109, z * 16, 16, 1, 16, 0.03125D, 1.0D, 0.03125D);
         this.depthBuffer = this.netherrackExculsivityNoiseGen.generateNoiseOctaves(this.depthBuffer, x * 16, z * 16, 0, 16, 16, 1, 0.0625D, 0.0625D, 0.0625D);
@@ -293,8 +285,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
         MinecraftForge.EVENT_BUS.post(event);
         if (event.getResult() == Event.Result.DENY) return event.getNoisefield();
 
-        double d0 = 684.412D;
-        double d1 = 2053.236D;
         this.noiseData4 = this.scaleNoise.generateNoiseOctaves(this.noiseData4, x, y, z, xSize, 1, zSize, 1.0D, 0.0D, 1.0D);
         this.dr = this.depthNoise.generateNoiseOctaves(this.dr, x, y, z, xSize, 1, zSize, 100.0D, 0.0D, 100.0D);
         this.pnr = this.perlinNoise1.generateNoiseOctaves(this.pnr, x, y, z, xSize, ySize, zSize, 8.555150000000001D, 34.2206D, 8.555150000000001D);
@@ -324,8 +314,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
         {
             for (int i1 = 0; i1 < zSize; ++i1)
             {
-                double d3 = 0.0D;
-
                 for (int k = 0; k < ySize; ++k)
                 {
                     double d4 = adouble[k];
@@ -380,7 +368,6 @@ public class ChunkGeneratorVoid implements IChunkGenerator
         int j = z * 16;
         BlockPos blockpos = new BlockPos(i, 0, j);
         Biome biome = this.world.getBiome(blockpos.add(16, 0, 16));
-        ChunkPos chunkpos = new ChunkPos(x, z);
 
         //This and any other things you may wish to add
         if (TerrainGen.populate(this, this.world, this.rand, x, z, false, PopulateChunkEvent.Populate.EventType.NETHER_LAVA))
@@ -393,9 +380,7 @@ public class ChunkGeneratorVoid implements IChunkGenerator
         }
 
         ForgeEventFactory.onChunkPopulate(false, this, this.world, this.rand, x, z, false);
-        MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Pre(this.world, this.rand, blockpos));
         biome.decorate(this.world, this.rand, new BlockPos(i, 0, j));
-        MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Post(this.world, this.rand, blockpos));
         BlockFalling.fallInstantly = false;
     }
 
